@@ -1,0 +1,61 @@
+/**
+ * @doc 文章列表页面
+ * @author Heanes
+ * @time 2018-11-23 23:45:21 周五
+ */
+.article-list{
+    margin: 10px auto;
+    padding-left: 10px;
+    .article-item{
+        padding: 20px 0;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+
+        .item-left,
+        .item-right{
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .item-left{
+            padding-right: 20px;
+            .article-cover-img{
+                display: block;
+                width: 160px;
+            }
+        }
+
+        .item-right{
+            .article-title{
+                font-size: 24px;
+                font-weight: 400;
+            }
+            .article-content-brief{
+                line-height: 24px;
+                font-size: 16px;
+                color: #555;
+            }
+            .meta-info{
+                margin-top: 20px;
+                .meta-item{
+                    font-size: 16px;
+                    +.meta-item{
+                        margin-left: 14px;
+                    }
+                    .btn{
+                        color: #fff;
+                    }
+
+                    &.post-time,
+                    &.read-count{
+                        color: #f96868;
+                        .fa{
+                            margin: 0 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

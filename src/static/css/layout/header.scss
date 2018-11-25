@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/**
+ * @doc 头部
+ * @author Heanes
+ * @time 2018-10-12 18:39:37 周五
+ */
+$headerTopBgColor: #f4f4f4;
+$headerTopHeight: 30px;
+
+$headerNavBgColor: #4097d6;
+$headerNavHoverBgColor: #124d8a;
+$headerNavHeight: 50px;
+$headerNavSubHeight: 40px;
+.header{
+    .header-top-wrap{
+        box-shadow: 0 0 3px 2px #ddd;
+        height: $headerTopHeight;
+        line-height: $headerTopHeight;
+        background-color: $headerTopBgColor;
+        overflow: hidden;
+
+        .header-top{
+            .top-left{
+                float: left;
+
+                .header-notice-list{
+                    position: relative;
+                    .notice-item{
+                    }
+                }
+            }
+            .top-right{
+                float: right;
+
+                .top-right-link{
+                    line-height: 24px;
+                    padding: 0 6px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    &:last-child{
+                        border-right: 0;
+                        margin-right: 0;
+                    }
+                }
+                .border-separate{
+                    display: inline-block;
+                    height: 14px;
+                    line-height: 14px;
+                    border-right: 1px solid #ddd;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    /* 响应式切换 */
+    .nav-bar-toggle{
+        display: none;
+    }
+
+    .header-nav-wrap{
+        background-color: $headerNavBgColor;
+
+        .nav-list{
+            font-size: 0;
+            .nav-item{
+                position: relative;
+                height: $headerNavHeight;
+                line-height: $headerNavHeight;
+                display: inline-block;
+                padding: 0 14px;
+                cursor: pointer;
+                font-size: 15px;
+
+                .nav-link{
+                    display: block;
+                    color: #fff;
+                    white-space: nowrap;
+                }
+                .nav-sub{
+                    display: none;
+                    position: absolute;
+                    min-width: 100%;
+                    background-color: $headerNavBgColor;
+                    z-index: 2;
+
+                    .nav-item{
+                    }
+                }
+                &.active,
+                &.hover,
+                &.expand,
+                &:hover{
+                    background-color: $headerNavHoverBgColor;
+                }
+                &:hover,
+                &.expand{
+
+                    .nav-sub{
+                        display: block;
+                        left: 0;
+
+                        .nav-item{
+                            display: block;
+                            height: $headerNavSubHeight;
+                            line-height: $headerNavSubHeight;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

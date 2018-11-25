@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/**
+ * @doc footer页脚样式
+ * @author Heanes
+ * @time 2018-04-16 12:05:01 周一
+ */
+/* S 脚部 S */
+.footer .footer-content {
+  background: #212121;
+  /* 联系我们 */
+  /* 友情链接 */
+  /* 脚部导航链接 */
+  /* 可信信息 */ }
+  .footer .footer-content.footer-top-border {
+    border-top: 14px solid #000; }
+  .footer .footer-content a:hover {
+    text-decoration: underline; }
+  .footer .footer-content .friend-link-wrap {
+    background-color: #1f1f1f; }
+    .footer .footer-content .friend-link-wrap .friend-link {
+      vertical-align: middle;
+      background-color: #1f1f1f; }
+      .footer .footer-content .friend-link-wrap .friend-link .friend-link-title,
+      .footer .footer-content .friend-link-wrap .friend-link .friend-link-list {
+        display: inline-block;
+        vertical-align: top; }
+      .footer .footer-content .friend-link-wrap .friend-link .friend-link-title {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 30px;
+        margin: 0;
+        background: url(../../image/common/footer/friend-link/bg-friend-link.jpg) 0 0 no-repeat;
+        background-size: 100% 100%;
+        font-size: 14px;
+        color: #fff; }
+      .footer .footer-content .friend-link-wrap .friend-link .friend-link-list {
+        height: 40px;
+        overflow: hidden; }
+        .footer .footer-content .friend-link-wrap .friend-link .friend-link-list .link-item {
+          display: inline-block;
+          margin: 0 10px;
+          height: 40px;
+          line-height: 40px;
+          vertical-align: middle;
+          text-align: center; }
+          .footer .footer-content .friend-link-wrap .friend-link .friend-link-list .link-item .link {
+            display: block; }
+  .footer .footer-content .footer-section + .footer-section {
+    margin-top: 20px; }
+  .footer .footer-content .footer-section .footer-website-logo,
+  .footer .footer-content .footer-section .add-link {
+    display: inline-block;
+    vertical-align: top; }
+  .footer .footer-content .footer-section .footer-website-logo {
+    padding: 30px;
+    text-align: center;
+    border-radius: 50%; }
+    .footer .footer-content .footer-section .footer-website-logo:hover {
+      background-color: #eee;
+      border-radius: 50%; }
+      .footer .footer-content .footer-section .footer-website-logo:hover .footer-website-home-link {
+        background-color: #fff;
+        box-shadow: 0 0 10px 0 rgba(173, 173, 173, 0.5);
+        -webkit-animation: rotateAlways 2s linear infinite; }
+        .footer .footer-content .footer-section .footer-website-logo:hover .footer-website-home-link .logo-img {
+          box-shadow: 0 0 10px 0 rgba(173, 173, 173, 0.5); }
+    .footer .footer-content .footer-section .footer-website-logo .footer-website-home-link {
+      display: block;
+      padding: 24px;
+      border-radius: 50%; }
+      .footer .footer-content .footer-section .footer-website-logo .footer-website-home-link .logo-img {
+        width: 80px;
+        max-width: 80px;
+        border-radius: 10px; }
+  .footer .footer-content .footer-section .add-link {
+    padding-left: 10px; }
+    .footer .footer-content .footer-section .add-link .link-group {
+      margin: 10px 0 0; }
+      .footer .footer-content .footer-section .add-link .link-group > li {
+        display: inline-block;
+        width: 160px; }
+      .footer .footer-content .footer-section .add-link .link-group .link-category {
+        font-size: 14px;
+        height: 26px;
+        color: #8c8c8c;
+        padding-left: 10px;
+        margin-bottom: 0; }
+      .footer .footer-content .footer-section .add-link .link-group .link-list {
+        margin: 0 auto; }
+        .footer .footer-content .footer-section .add-link .link-group .link-list li {
+          padding-left: 10px;
+          height: 28px;
+          line-height: 28px;
+          overflow: hidden; }
+        .footer .footer-content .footer-section .add-link .link-group .link-list a {
+          color: #b5b5b5;
+          font-size: 13px; }
+          .footer .footer-content .footer-section .add-link .link-group .link-list a:hover {
+            color: #e7e7e8; }
+  .footer .footer-content .footer-nav-link {
+    text-align: center; }
+    .footer .footer-content .footer-nav-link .link-item {
+      padding: 0 16px; }
+      .footer .footer-content .footer-nav-link .link-item + .link-item {
+        border-left: 1px solid #565454; }
+  .footer .footer-content .footer-trust {
+    text-align: center; }
+    .footer .footer-content .footer-trust .web-cert-trust-list .trust-item {
+      display: inline-block;
+      background: url("../../image/common/footer/web_cert_tust_sprite.png");
+      width: 130px;
+      height: 57px;
+      cursor: pointer; }
+      .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust1 {
+        background-position: 1px 236px; }
+        .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust1:hover {
+          background-position: 1px 179px; }
+      .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust2 {
+        background-position: 444px 236px; }
+        .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust2:hover {
+          background-position: 444px 179px; }
+      .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust3 {
+        background-position: 315px 236px; }
+        .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust3:hover {
+          background-position: 315px 179px; }
+      .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust4 {
+        background-position: 184px 236px; }
+        .footer .footer-content .footer-trust .web-cert-trust-list .trust-item.trust4:hover {
+          background-position: 184px 179px; }
+  .footer .footer-content .copyright {
+    background-color: #000;
+    color: #5d5d5d;
+    font-size: 13px;
+    padding: 6px 0; }
+    .footer .footer-content .copyright .p {
+      text-align: center;
+      line-height: 20px;
+      margin: 0; }
+      .footer .footer-content .copyright .p .in-text:hover {
+        color: #e7e7e8; }
+        .footer .footer-content .copyright .p .in-text:hover a {
+          color: #e7e7e8; }
+      .footer .footer-content .copyright .p .in-text a {
+        color: #5d5d5d; }
+        .footer .footer-content .copyright .p .in-text a:hover {
+          color: #7c94e8; }
+
+/* E 脚部 E */
+
+/*# sourceMappingURL=footer.css.map */

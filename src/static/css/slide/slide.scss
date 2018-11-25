@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * @doc 幻灯
+ * @author Heanes
+ * @time 2018-11-22 10:39:43 周四
+ */
+
+/* 首页幻灯 */
+.index-slide-show{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+    &.slick-slider{
+        .slick-dots{
+            bottom: 2px;
+            li button:before{
+                font-size: 8px;
+            }
+        }
+        .slick-prev,
+        .slick-next{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(0,0,0,.3);
+            z-index: 2;
+            font-size: 40px;
+
+            &:before{
+                display: none;
+            }
+        }
+        .slick-prev{
+            left: 10px;
+        }
+        .slick-next{
+            right: 10px;
+        }
+    }
+}

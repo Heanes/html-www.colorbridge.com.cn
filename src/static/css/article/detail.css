@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * @doc 面包屑导航
+ * @author Heanes
+ * @time 2018-11-24 17:22:57 周六
+ */
+.page-breadcrumb {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
+
+/**
+ * @doc 文章详情页
+ * @author Heanes
+ * @time 2018-11-24 21:08:46 周六
+ */
+.article-detail-wrap {
+  padding: 10px; }
+  .article-detail-wrap .article-title {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px; }
+    .article-detail-wrap .article-title .title {
+      font-size: 26px;
+      font-weight: 400; }
+  .article-detail-wrap .article-meta-info {
+    margin-top: 20px;
+    color: #888; }
+    .article-detail-wrap .article-meta-info .meta-item {
+      font-size: 16px; }
+      .article-detail-wrap .article-meta-info .meta-item + .meta-item {
+        margin-left: 14px; }
+      .article-detail-wrap .article-meta-info .meta-item.post-time .fa, .article-detail-wrap .article-meta-info .meta-item.read-count .fa {
+        margin: 0 8px; }
+  .article-detail-wrap .article-content {
+    margin: 20px 0;
+    line-height: 26px;
+    font-size: 14px; }
+    .article-detail-wrap .article-content > p {
+      text-indent: 2em;
+      margin-bottom: 1em; }
+
+/*# sourceMappingURL=detail.css.map */

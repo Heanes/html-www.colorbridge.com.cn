@@ -1,0 +1,50 @@
+/**
+ * @doc 面包屑导航
+ * @author Heanes
+ * @time 2018-11-24 17:22:57 周六
+ */
+.page-breadcrumb{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+/**
+ * @doc 文章详情页
+ * @author Heanes
+ * @time 2018-11-24 21:08:46 周六
+ */
+.article-detail-wrap{
+    padding: 10px;
+    .article-title{
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        .title{
+            font-size: 26px;
+            font-weight: 400;
+        }
+    }
+    .article-meta-info{
+        margin-top: 20px;
+        color: #888;
+        .meta-item{
+            font-size: 16px;
+            +.meta-item{
+                margin-left: 14px;
+            }
+            &.post-time,
+            &.read-count{
+                .fa{
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+    .article-content{
+        margin: 20px 0;
+        line-height: 26px;
+        font-size: 14px;
+        >p{
+            text-indent: 2em;
+            margin-bottom: 1em;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/**
+ * @doc 文章列表页面
+ * @author Heanes
+ * @time 2018-11-23 23:45:21 周五
+ */
+.article-list {
+  margin: 10px auto;
+  padding-left: 10px; }
+  .article-list .article-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px; }
+    .article-list .article-item .item-left,
+    .article-list .article-item .item-right {
+      display: table-cell;
+      vertical-align: top; }
+    .article-list .article-item .item-left {
+      padding-right: 20px; }
+      .article-list .article-item .item-left .article-cover-img {
+        display: block;
+        width: 160px; }
+    .article-list .article-item .item-right .article-title {
+      font-size: 24px;
+      font-weight: 400; }
+    .article-list .article-item .item-right .article-content-brief {
+      line-height: 24px;
+      font-size: 16px;
+      color: #555; }
+    .article-list .article-item .item-right .meta-info {
+      margin-top: 20px; }
+      .article-list .article-item .item-right .meta-info .meta-item {
+        font-size: 16px; }
+        .article-list .article-item .item-right .meta-info .meta-item + .meta-item {
+          margin-left: 14px; }
+        .article-list .article-item .item-right .meta-info .meta-item .btn {
+          color: #fff; }
+        .article-list .article-item .item-right .meta-info .meta-item.post-time, .article-list .article-item .item-right .meta-info .meta-item.read-count {
+          color: #f96868; }
+          .article-list .article-item .item-right .meta-info .meta-item.post-time .fa, .article-list .article-item .item-right .meta-info .meta-item.read-count .fa {
+            margin: 0 8px; }
+
+/*# sourceMappingURL=list.css.map */

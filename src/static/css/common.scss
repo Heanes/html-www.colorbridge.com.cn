@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * @doc 公用样式
+ * @author Heanes
+ * @time 2018-10-12 18:12:30 周五
+ */
+
+body{
+    //background-color: #ededed;
+}
+
+.main-width{
+    margin: 0 auto;
+}
+
+.main-content{
+    margin-top: 20px;
+}
+
+.container{
+    .row{
+        &:after{
+            display: table;
+            content: ' ';
+            clear: both;
+        }
+        [class*=col-]{
+            float: left;
+        }
+        .col-4-1{
+            width: 25%;
+        }
+        .col-4-3{
+            width: 75%;
+        }
+    }
+}
+
+/**
+ * @doc 面包屑导航
+ * @author Heanes
+ * @time 2018-11-24 17:22:57 周六
+ */
+.page-breadcrumb{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* 分页样式 */
+.pagination-wrap{
+    text-align: center;
+}
