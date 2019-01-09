@@ -72,13 +72,14 @@
     import ArticleCategory from '@/components/article/Category';
     import ArticleSlide from '@/components/article/ArticleSlide';
 
-    import '@/static/css/article/list.scss';
-    import '@/static/css/responsive.scss';
+    import '../../static/css/article/list.scss';
+    import '../../static/css/responsive.scss';
 
     export default {
         name: 'ArticleList',
         data() {
             return {
+                pageTitle: '文章列表',
                 articleList: []
             }
         },
@@ -97,7 +98,7 @@
                         brief: '现在已经不是买一台印刷机就能行走天下的时代，印刷企业需要开动脑筋，更多地加入新鲜元素——创意。这种创意不仅仅是思维上的创新，也包含通过设备技术改造将业务范围拓宽。而数码印刷适应市场印量越来越小、短版化的需求，还因为其环保、节约成本的特点成为未来印刷市场的必然趋势。与此同时，数码印刷更以其独有的数字化方式给传统印刷企业开拓出了各种意想不到的“创意”。',
                         postTimeFormative: '2018-11-24 17:24:47',
                         readCount: 4443,
-                        coverImg: require('@/upload/image/article/cover/cover_01.jpg')
+                        coverImg: require('@/public/upload/image/article/cover/cover_01.jpg')
                     },
                     {
                         id: 2,
@@ -105,7 +106,7 @@
                         brief: '现在已经不是买一台印刷机就能行走天下的时代，印刷企业需要开动脑筋，更多地加入新鲜元素——创意。这种创意不仅仅是思维上的创新，也包含通过设备技术改造将业务范围拓宽。而数码印刷适应市场印量越来越小、短版化的需求，还因为其环保、节约成本的特点成为未来印刷市场的必然趋势。与此同时，数码印刷更以其独有的数字化方式给传统印刷企业开拓出了各种意想不到的“创意”。',
                         postTimeFormative: '2018-11-24 17:24:47',
                         readCount: 4443,
-                        coverImg: require('@/upload/image/article/cover/cover_02.jpg')
+                        coverImg: require('@/public/upload/image/article/cover/cover_02.jpg')
                     }
                 ];
             }
@@ -116,7 +117,7 @@
             'comp-article-slide': ArticleSlide
         },
         created() {
-            document.title = '新闻列表';
+            document.title = this.pageTitle;
         }
     }
 </script>

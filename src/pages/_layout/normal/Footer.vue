@@ -1,6 +1,8 @@
 <template>
     <!-- S footer 脚部 S -->
     <div class="footer footer-wrap" slot="footer">
+        <!-- 联系我们 -->
+        <comp-contact-us></comp-contact-us>
         <div class="footer-content footer-top-border">
             <div class="footer-section contact-us-wrap">
                 <!-- 快捷的联系我们 -->
@@ -57,9 +59,14 @@
 </template>
 
 <script>
-    import '@/static/css/layout/footer.scss'
+    import '../../static/css/layout/footer.scss';
+    import ContactUs from '@/components/index/ContactUs';
+
     export default {
-        name: 'Footer'
+        name: 'Footer',
+        components: {
+            'comp-contact-us': ContactUs,
+        }
     }
 </script>
 

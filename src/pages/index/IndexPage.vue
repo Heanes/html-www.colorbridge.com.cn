@@ -28,6 +28,22 @@
                                     <h3 class="main-title">专业顾问团队，竭诚为您服务</h3>
                                     <h4 class="sub-title">贴心为您服务，快捷实现您的需求</h4>
                                 </div>
+                                <ul class="team-service-list main-width">
+                                    <li v-for="(item, index) in teamServiceList" class="item">
+                                        <div class="card service-card">
+                                            <div class="img-cover-wrap">
+                                                <img class="img-cover" :src="item.coverImgSrc" alt="">
+                                            </div>
+                                            <div class="item-info">
+                                                <h3 class="title">{{item.clerkName}}</h3>
+                                                <div class="description">
+                                                    <p>{{item.description}}</p>
+                                                    <p class="service-hot-line">服务热线: <span class="hot-line-phone">{{item.hotLinePhone}}</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <!-- 服务特色 -->
                             <div class="feature-item service-feature">
@@ -88,6 +104,30 @@
                                     <h3 class="main-title">合作案例</h3>
                                     <h4 class="sub-title">每一个客户的服务我们都精益求精</h4>
                                 </div>
+                                <div class="show-more-wrap main-width">
+                                    <a class="show-more" href="javascript:">查看更多+</a>
+                                </div>
+                                <ul class="cooperation-case-list main-width">
+                                    <li v-for="(item, index) in cooperationCaseList" class="item">
+                                        <div class="card case-card">
+                                            <div class="img-cover-wrap">
+                                                <img class="img-cover" :src="item.coverImgSrc" alt="">
+                                            </div>
+                                            <div class="item-info">
+                                                <div class="description">
+                                                    <p>{{item.description}}</p>
+                                                </div>
+                                                <dl class="meta-info">
+                                                    <dt class="meta-field">发布日期</dt>
+                                                    <dd class="meta-value">{{item.publishTimeFormative}}2018-12-02</dd>
+                                                    <dt class="meta-field"><i class="fa fa-eye"></i></dt>
+                                                    <dd class="meta-value">{{item.clickCount}}3253</dd>
+                                                </dl>
+                                                <h3 class="title">{{item.title}}</h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                             <!-- 厂房设备 -->
                             <div class="feature-item factory-equipment">
@@ -99,8 +139,8 @@
                                     <li class="item">
                                         <div class="item-content">
                                             <div class="item-image-cover">
-                                                <a class="item-image" href="../product/equipment.html">
-                                                    <img class="img" src="@/upload/image/equipment/equipment_01.jpg" alt="">
+                                                <a class="item-image" href="../equipment/detail.html">
+                                                    <img class="img" src="@/public/upload/image/equipment/equipment_01.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="item-detail">
@@ -119,8 +159,8 @@
                                     <li class="item">
                                         <div class="item-content">
                                             <div class="item-image-cover">
-                                                <a class="item-image" href="../product/equipment.html">
-                                                    <img class="img" src="@/upload/image/equipment/equipment_02.jpg" alt="">
+                                                <a class="item-image" href="../equipment/detail.html">
+                                                    <img class="img" src="@/public/upload/image/equipment/equipment_02.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="item-detail">
@@ -136,8 +176,8 @@
                                     <li class="item">
                                         <div class="item-content">
                                             <div class="item-image-cover">
-                                                <a class="item-image" href="../product/equipment.html">
-                                                    <img class="img" src="@/upload/image/equipment/equipment_03.jpg" alt="">
+                                                <a class="item-image" href="../equipment/detail.html">
+                                                    <img class="img" src="@/public/upload/image/equipment/equipment_03.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="item-detail">
@@ -153,66 +193,68 @@
                                 </ul>
                             </div>
                             <!-- 新闻资讯 -->
-                            <!-- 做成tab形式 -->
-                            <div class="news-wrap">
-                                <div class="news-group main-width">
-                                    <div class="item-wrap">
-                                        <div class="news-group-item">
-                                            <h3 class="group-item-title"><span class="title-border-vertical"></span>公司新闻</h3>
-                                            <ul class="news-list">
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">台历挂历制作印刷掀起复古风<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">数字印刷与标签印刷前景可观<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                            <div class="news-list-wrap main-width">
+                                <div class="item-wrap">
+                                    <div class="news-group-item">
+                                        <h3 class="group-item-title"><span class="title-border-vertical"></span>公司新闻</h3>
+                                        <ul class="news-list">
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">台历挂历制作印刷掀起复古风<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">数字印刷与标签印刷前景可观<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="item-wrap">
-                                        <div class="news-group-item">
-                                            <h3 class="group-item-title"><span class="title-border-vertical"></span>行业动态</h3>
-                                            <ul class="news-list">
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">标签印刷的绿色时代已来临<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">印刷电子市场潜力巨大商机无限<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">探析印刷与网络的结合是必然<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">印刷机械首次列入机电出口重点行业<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">金融危机之下如何找到合适的产品说明书印刷供应商？<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">如何降低彩色样本印刷的成本？<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">产品说明书印刷厂的报价技巧<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                                <li class="news-item">
-                                                    <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="item-wrap">
+                                    <div class="news-group-item">
+                                        <h3 class="group-item-title"><span class="title-border-vertical"></span>行业动态</h3>
+                                        <ul class="news-list">
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">标签印刷的绿色时代已来临<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">印刷电子市场潜力巨大商机无限<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">探析印刷与网络的结合是必然<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">印刷机械首次列入机电出口重点行业<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">金融危机之下如何找到合适的产品说明书印刷供应商？<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">如何降低彩色样本印刷的成本？<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">产品说明书印刷厂的报价技巧<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">数码印刷颠覆明信片印刷传统<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="item-wrap">
-                                        <div class="news-group-item">
-                                            <h3 class="group-item-title"><span class="title-border-vertical"></span>常见问题</h3>
-                                            <ul class="news-list">
-                                                <li></li>
-                                            </ul>
-                                        </div>
+                                </div>
+                                <div class="item-wrap">
+                                    <div class="news-group-item">
+                                        <h3 class="group-item-title"><span class="title-border-vertical"></span>常见问题</h3>
+                                        <ul class="news-list">
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">怎么解决印刷中咬色串色的技术难题？<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                            <li class="news-item">
+                                                <a class="new-link" href="../article/detail.html">浅析什么是个性化印刷？<span class="news-date">2018-10-15</span></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -237,14 +279,22 @@
     import Layout from '../_layout/normal/Layout';
     import Slide from './Slide';
 
-    import '@/static/css/index/index.scss';
-    import '@/static/css/responsive.scss';
+    import $ from 'jquery';
+
+    import '@/public/static/vendor/slick/1.9.0/slick/slick.min.js';
+    import '@/public/static/vendor/slick/1.9.0/slick/slick.css';
+    import '@/public/static/vendor/slick/1.9.0/slick/slick-theme.css';
+
+    import '../static/css/index/index.scss';
+    import '../static/css/responsive.scss';
 
     export default {
         name: 'Index',
         data() {
             return {
-                pageTitle: '首页'
+                pageTitle: '首页',
+                teamServiceList: [],    // 团队服务
+                cooperationCaseList: [] // 合作案例
             }
         },
         components: {
@@ -252,12 +302,181 @@
             'comp-slide': Slide,
         },
         methods: {
+            // 团队服务
+            getTeamServiceList() {
+                return [
+                    {
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/clerk/clerk_01.jpg'),
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        clerkName: '王意涵',
+                        hotLinePhone: '400-888-8888'
+                    }, {
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/clerk/clerk_02.jpg'),
+                        clerkName: '郑海川',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        hotLinePhone: '400-888-8888'
+                    },{
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/clerk/clerk_03.jpg'),
+                        clerkName: '李斌',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        hotLinePhone: '400-888-8888'
+                    },
+                    {
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/clerk/clerk_04.jpg'),
+                        clerkName: '王奕斐',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        hotLinePhone: '400-888-8888'
+                    },
+                    {
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/clerk/clerk_05.jpg'),
+                        clerkName: '李瀚斯',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        hotLinePhone: '400-888-8888'
+                    }
+                ];
+            },
+            // 获取合作案例
+            getCooperationCaseList() {
+                return [
+                    {
+                        id: 1,
+                        coverImgSrc: require('@/public/upload/image/case/case_01.jpg'),
+                        title: '交易中心宣传样本印刷',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    }, {
+                        id: 2,
+                        coverImgSrc: require('@/public/upload/image/case/case_02.jpg'),
+                        title: '系列儿童图书印刷加工服务',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },{
+                        id: 3,
+                        coverImgSrc: require('@/public/upload/image/case/case_03.jpg'),
+                        title: '出版物印刷与装帧加工',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },
+                    {
+                        id: 4,
+                        coverImgSrc: require('@/public/upload/image/case/case_04.jpg'),
+                        title: '企业画册设计',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },
+                    {
+                        id: 5,
+                        coverImgSrc: require('@/public/upload/image/case/case_05.jpg'),
+                        title: '只为遇见最美的儿童故事书',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },
+                    {
+                        id: 6,
+                        coverImgSrc: require('@/public/upload/image/case/case_06.jpg'),
+                        title: '儿童书印刷6年风雨历程',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },
+                    {
+                        id: 7,
+                        coverImgSrc: require('@/public/upload/image/case/case_07.jpg'),
+                        title: '印刷公司与笔记本的故事',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    },
+                    {
+                        id: 8,
+                        coverImgSrc: require('@/public/upload/image/case/case_08.jpg'),
+                        title: '精装书印刷及装帧加工服务',
+                        description: '每一个客户我都是十分真诚简单的对待，我相信用心做事一定能收获意想不到的成果',
+                        publishTimeFormative: '2018-12-02',
+                        clickCount: 1243
+                    }
+                ];
+            }
 
         },
         mounted() {
+            let $teamServiceList = $('.team-service-list');
+            let rz = [4, 4, 2, 1];
+            $teamServiceList.slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: !1,
+                speed: 500,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+                slidesToShow: rz[0],
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: rz[1]
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: rz[2]
+                        }
+                    }, {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: rz[3]
+                        }
+                    }
+                ]
+            });
+
+            let $cooperationCaseList = $('.cooperation-case-list');
+            $cooperationCaseList.slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: !1,
+                speed: 500,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+                slidesToShow: rz[0],
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: rz[1]
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            slidesToShow: rz[2]
+                        }
+                    }, {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: rz[3]
+                        }
+                    }
+                ]
+            })
         },
         created() {
-            document.title = '首页';
+            document.title = this.pageTitle;
+            this.teamServiceList = this.getTeamServiceList();
+            this.cooperationCaseList = this.getCooperationCaseList();
         },
     }
 </script>

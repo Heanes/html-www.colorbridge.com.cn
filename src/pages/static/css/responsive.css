@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/**
+ * @doc responsive
+ * @author Heanes
+ * @time 2018-10-12 17:59:14 周五
+ */
+/* ------------------------------ PC 大屏 ------------------------------ */
+/* Widely screen */
+@media screen and (min-width: 1367px) {
+  .main-width {
+    width: 94%;
+    max-width: 1200px; } }
+/* ------------------------------ PC 中等屏 ------------------------------ */
+/* Normal noteBook */
+@media screen and (max-width: 1366px) {
+  .main-width {
+    width: 1200px; } }
+@media screen and (max-width: 1200px) {
+  .main-width {
+    width: 94%; } }
+/* ------------------------------ 中屏 ------------------------------ */
+/* iPad */
+@media screen and (min-width: 767px) and (max-width: 1139px) {
+  .main .service-feature .service-feature-list .item {
+    width: 33.3333%; }
+  .main .cooperation-case .cooperation-case-list .item {
+    width: 50%; }
+  .main .factory-equipment .equipment-list .item {
+    width: 50%; }
+  .main .news-list-wrap .item-wrap {
+    width: 100%; } }
+/* ------------------------------ 小屏 ------------------------------ */
+@media screen and (max-width: 767px) {
+  .main-width {
+    width: 100%; }
+
+  .main .service-feature .service-feature-list .item {
+    width: 33.3333%; }
+
+  .header .header-nav-wrap {
+    position: relative; }
+    .header .header-nav-wrap .nav-bar-toggle {
+      display: block;
+      position: relative;
+      float: right;
+      right: 0;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      background-color: #f9f9f9;
+      border: 1px solid transparent;
+      border-radius: 4px; }
+      .header .header-nav-wrap .nav-bar-toggle .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #563d7c; }
+        .header .header-nav-wrap .nav-bar-toggle .icon-bar + .icon-bar {
+          margin-top: 4px; }
+    .header .header-nav-wrap .nav-list {
+      display: block; }
+      .header .header-nav-wrap .nav-list .nav-item {
+        display: block;
+        height: auto;
+        line-height: 40px;
+        border-bottom: 1px solid #238eda; }
+        .header .header-nav-wrap .nav-list .nav-item .nav-sub {
+          position: relative; } }
+/* ------------------------------ 手机屏 ------------------------------ */
+@media screen and (max-width: 479px) {
+  h1, h2 {
+    font-size: 16px; }
+
+  h3 {
+    font-size: 14px; }
+
+  .main .service-feature .service-feature-list .item {
+    width: 50%; }
+  .main .cooperation-case .cooperation-case-list .item {
+    width: 50%; }
+  .main .factory-equipment .equipment-list .item {
+    width: 100%; }
+  .main .news-list-wrap .item-wrap {
+    width: 100%; } }
+/* iPhone 6plus */
+/* iPhone 6 */
+/* iPhone 3 4 5 */
+/* Android and + */
+/* Android and + */
+
+/*# sourceMappingURL=responsive.css.map */

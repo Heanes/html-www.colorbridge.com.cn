@@ -91,7 +91,7 @@
 </template>
 
 <script>
-    import '@/static/css/layout/header.scss'
+    import '../../static/css/layout/header.scss'
 
     import $ from 'jquery';
     export default {

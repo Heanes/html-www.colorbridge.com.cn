@@ -25,6 +25,76 @@
 .team-service{
     background-color: #fff;
     color: #333;
+    overflow: hidden;
+    .team-service-list{
+        font-size: 0;
+        .item{
+            width: 25%;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            font-size: 14px;
+
+            .service-card{
+                padding: 20px;
+                .img-cover-wrap{
+                    .img-cover{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .item-info{
+                    .title{
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                    .description{
+                        margin: 10px 0;
+                        text-align: left;
+                        .service-hot-line{
+                            margin-top: 20px;
+                            text-align: center;
+                            .hot-line-phone{
+                                color: #ff7f00;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-slider{
+        padding: 0 20px;
+        .slick-prev,
+        .slick-next{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #eee;
+            z-index: 2;
+            font-size: 28px;
+            color: #999;
+
+            &:before{
+                display: none;
+            }
+
+            &:hover{
+                background-color: #55acee;
+                color: #fff;
+            }
+        }
+        .slick-prev{
+            left: -20px;
+            padding-right: 4px;
+        }
+        .slick-next{
+            right: -20px;
+            padding-left: 4px;
+        }
+    }
 }
 
 /* 服务特点 */
@@ -92,8 +162,105 @@
 
 /* 合作案例 */
 .cooperation-case{
+    background-color: #eee;
+    .show-more-wrap{
+        position: relative;
+        .show-more{
+            position: absolute;
+            top: -20px;
+            right: 120px;
+        }
+    }
+    .cooperation-case-list{
+        font-size: 0;
+        .item{
+            width: 25%;
+            padding: 12px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            font-size: 14px;
 
+            .case-card{
+                background-color: #fff;
+                .img-cover-wrap{
+                    .img-cover{
+                        width: 100%;
+                    }
+                }
+                .item-info{
+                    padding: 14px;
+                    .title{
+                        text-align: center;
+                        margin: 10px 0;
+                    }
+                    .description{
+                        margin: 10px 0;
+                        text-align: left;
+                        .service-hot-line{
+                            margin-top: 20px;
+                            text-align: center;
+                            .hot-line-phone{
+                                color: #ff7f00;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .meta-info{
+                        .meta-field,
+                        .meta-value{
+                            display: inline-block;
+                            vertical-align: top;
+                            line-height: 12px;
+                        }
+                        .meta-field{
+                            font-weight: 400;
+                            padding-right: 6px;
+                            margin-right: 6px;
+                            border-right: 1px solid #eee;
+                        }
+                        .meta-value{
+                            +.meta-field{
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-slider{
+        .slick-prev,
+        .slick-next{
+            width: 40px;
+            height: 30px;
+            top: -10px;
+            border-radius: 3px;
+            z-index: 2;
+            border: 1px solid #bbb;
+            font-size: 28px;
+            color: #999;
+
+            &:before{
+                display: none;
+            }
+
+            &:hover{
+                background-color: #fff;
+            }
+        }
+        .slick-prev{
+            left: unset;
+            right: 59px;
+            padding-right: 4px;
+        }
+        .slick-next{
+            right: 20px;
+            padding-left: 4px;
+        }
+    }
 }
+
 /* 厂房设备 */
 .factory-equipment{
     background-color: #fff;
@@ -150,7 +317,7 @@
 }
 
 /* 公司新闻 */
-.news-wrap{
+.news-list-wrap{
     background-color: #fff;
     padding: 40px 0;
     font-size: 0;

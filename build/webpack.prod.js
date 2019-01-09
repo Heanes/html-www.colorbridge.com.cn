@@ -13,6 +13,8 @@ module.exports = {
 
     optimization: require('./product/optimization.product.config.js'),
 
-    mode: 'production'
+    mode: 'production',
+
+    stats: require('./product/stats.product.config.js')
 
 };

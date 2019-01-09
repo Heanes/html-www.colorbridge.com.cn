@@ -9,8 +9,8 @@
 <script>
     import CompHeader from '../../_layout/normal/Header';
     import CompFooter from '../../_layout/normal/Footer';
-    import '@/static/css/style/style-2018.scss';
-    import '@/static/css/common.scss';
+    import '../../static/css/style/style-2018.scss';
+    import '../../static/css/common.scss';
 
     export default {
         name: 'Layout',

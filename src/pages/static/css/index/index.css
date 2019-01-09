@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/**
+ * @doc 首页样式
+ * @author Heanes
+ * @time 2018-11-22 15:52:30 周四
+ */
+/* --- 服务特点 ---*/
+.feature-item {
+  padding: 30px 0; }
+  .feature-item > .title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 40px; }
+    .feature-item > .title .main-title, .feature-item > .title .sub-title {
+      font-weight: normal;
+      margin: 14px 0; }
+    .feature-item > .title .sub-title {
+      font-size: 16px; }
+
+/* 服务团队 */
+.team-service {
+  background-color: #fff;
+  color: #333;
+  overflow: hidden; }
+  .team-service .team-service-list {
+    font-size: 0; }
+    .team-service .team-service-list .item {
+      width: 25%;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font-size: 14px; }
+      .team-service .team-service-list .item .service-card {
+        padding: 20px; }
+        .team-service .team-service-list .item .service-card .img-cover-wrap .img-cover {
+          width: 100%;
+          border-radius: 50%; }
+        .team-service .team-service-list .item .service-card .item-info .title {
+          text-align: center;
+          margin: 10px 0; }
+        .team-service .team-service-list .item .service-card .item-info .description {
+          margin: 10px 0;
+          text-align: left; }
+          .team-service .team-service-list .item .service-card .item-info .description .service-hot-line {
+            margin-top: 20px;
+            text-align: center; }
+            .team-service .team-service-list .item .service-card .item-info .description .service-hot-line .hot-line-phone {
+              color: #ff7f00;
+              font-size: 20px; }
+  .team-service .slick-slider {
+    padding: 0 20px; }
+    .team-service .slick-slider .slick-prev,
+    .team-service .slick-slider .slick-next {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #eee;
+      z-index: 2;
+      font-size: 28px;
+      color: #999; }
+      .team-service .slick-slider .slick-prev:before,
+      .team-service .slick-slider .slick-next:before {
+        display: none; }
+      .team-service .slick-slider .slick-prev:hover,
+      .team-service .slick-slider .slick-next:hover {
+        background-color: #55acee;
+        color: #fff; }
+    .team-service .slick-slider .slick-prev {
+      left: -20px;
+      padding-right: 4px; }
+    .team-service .slick-slider .slick-next {
+      right: -20px;
+      padding-left: 4px; }
+
+/* 服务特点 */
+.service-feature {
+  margin: 0 auto;
+  background-color: #1585c9;
+  color: #fff; }
+  .service-feature .service-feature-list {
+    font-size: 0;
+    margin: 20px auto; }
+    .service-feature .service-feature-list .item {
+      display: inline-block;
+      width: 16.666667%;
+      margin: 40px 0;
+      font-size: 1rem;
+      vertical-align: top;
+      text-align: center; }
+      .service-feature .service-feature-list .item .icon {
+        position: relative;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        border-radius: 50%;
+        border: 1px solid;
+        font-size: 50px;
+        text-align: center;
+        transition: all .25s ease-out; }
+        .service-feature .service-feature-list .item .icon .num {
+          width: 35px;
+          height: 35px;
+          background: #ffffff;
+          border-radius: 100%;
+          border: 1px solid;
+          position: absolute;
+          left: -2px;
+          top: 5px;
+          color: #1585c9;
+          text-decoration: none;
+          font-size: 18px;
+          text-align: center;
+          line-height: 35px;
+          font-weight: 100;
+          z-index: 2;
+          font-family: Arial, serif;
+          transition: all .25s ease-out; }
+      .service-feature .service-feature-list .item:hover .icon {
+        background-color: #fff;
+        color: #1585c9; }
+      .service-feature .service-feature-list .item .item-content {
+        font-size: 14px;
+        padding: 0 10px;
+        line-height: 26px; }
+
+/* 合作案例 */
+.cooperation-case {
+  background-color: #eee; }
+  .cooperation-case .show-more-wrap {
+    position: relative; }
+    .cooperation-case .show-more-wrap .show-more {
+      position: absolute;
+      top: -20px;
+      right: 120px; }
+  .cooperation-case .cooperation-case-list {
+    font-size: 0; }
+    .cooperation-case .cooperation-case-list .item {
+      width: 25%;
+      padding: 12px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font-size: 14px; }
+      .cooperation-case .cooperation-case-list .item .case-card {
+        background-color: #fff; }
+        .cooperation-case .cooperation-case-list .item .case-card .img-cover-wrap .img-cover {
+          width: 100%; }
+        .cooperation-case .cooperation-case-list .item .case-card .item-info {
+          padding: 14px; }
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .title {
+            text-align: center;
+            margin: 10px 0; }
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .description {
+            margin: 10px 0;
+            text-align: left; }
+            .cooperation-case .cooperation-case-list .item .case-card .item-info .description .service-hot-line {
+              margin-top: 20px;
+              text-align: center; }
+              .cooperation-case .cooperation-case-list .item .case-card .item-info .description .service-hot-line .hot-line-phone {
+                color: #ff7f00;
+                font-size: 20px; }
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .meta-info .meta-field,
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .meta-info .meta-value {
+            display: inline-block;
+            vertical-align: top;
+            line-height: 12px; }
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .meta-info .meta-field {
+            font-weight: 400;
+            padding-right: 6px;
+            margin-right: 6px;
+            border-right: 1px solid #eee; }
+          .cooperation-case .cooperation-case-list .item .case-card .item-info .meta-info .meta-value + .meta-field {
+            margin-left: 6px; }
+  .cooperation-case .slick-slider .slick-prev,
+  .cooperation-case .slick-slider .slick-next {
+    width: 40px;
+    height: 30px;
+    top: -10px;
+    border-radius: 3px;
+    z-index: 2;
+    border: 1px solid #bbb;
+    font-size: 28px;
+    color: #999; }
+    .cooperation-case .slick-slider .slick-prev:before,
+    .cooperation-case .slick-slider .slick-next:before {
+      display: none; }
+    .cooperation-case .slick-slider .slick-prev:hover,
+    .cooperation-case .slick-slider .slick-next:hover {
+      background-color: #fff; }
+  .cooperation-case .slick-slider .slick-prev {
+    left: unset;
+    right: 59px;
+    padding-right: 4px; }
+  .cooperation-case .slick-slider .slick-next {
+    right: 20px;
+    padding-left: 4px; }
+
+/* 厂房设备 */
+.factory-equipment {
+  background-color: #fff; }
+  .factory-equipment .equipment-list {
+    font-size: 0; }
+    .factory-equipment .equipment-list .item {
+      width: 33.3333%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 10px;
+      font-size: 14px; }
+      .factory-equipment .equipment-list .item .item-content {
+        height: 100%;
+        border: 1px solid #ddd;
+        transition: all .5s; }
+        .factory-equipment .equipment-list .item .item-content .item-image-cover .item-image {
+          display: block;
+          width: 100%;
+          text-align: center;
+          overflow: hidden; }
+          .factory-equipment .equipment-list .item .item-content .item-image-cover .item-image .img {
+            width: 100%; }
+        .factory-equipment .equipment-list .item .item-content .item-detail {
+          padding: 20px;
+          height: 250px; }
+          .factory-equipment .equipment-list .item .item-content .item-detail .item-name .title {
+            font-size: 20px; }
+          .factory-equipment .equipment-list .item .item-content .item-detail .item-desc {
+            height: 180px;
+            line-height: 26px;
+            overflow: hidden;
+            word-break: break-all;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical; }
+        .factory-equipment .equipment-list .item .item-content:hover {
+          box-shadow: 0 0 10px 0 rgba(0, 0, 3, 0.6);
+          transform: translateY(-5px); }
+
+/* 公司新闻 */
+.news-list-wrap {
+  background-color: #fff;
+  padding: 40px 0;
+  font-size: 0; }
+  .news-list-wrap .item-wrap {
+    display: inline-block;
+    width: 33.333%;
+    padding: 5px;
+    vertical-align: top;
+    font-size: 14px; }
+  .news-list-wrap .news-group-item {
+    height: 380px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px; }
+    .news-list-wrap .news-group-item .group-item-title {
+      position: relative;
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      padding-left: 14px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px; }
+      .news-list-wrap .news-group-item .group-item-title .title-border-vertical {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        display: inline-block;
+        width: 4px;
+        height: 22px;
+        background-color: #004c98; }
+    .news-list-wrap .news-group-item .news-list .new-link {
+      position: relative;
+      display: block;
+      padding-right: 78px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      line-height: 28px; }
+      .news-list-wrap .news-group-item .news-list .new-link .news-date {
+        position: absolute;
+        right: 2px; }
+
+/*# sourceMappingURL=index.css.map */

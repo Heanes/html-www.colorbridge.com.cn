@@ -40,20 +40,24 @@
 <script>
     import Layout from '../../_layout/normal/Layout';
 
-    import '@/static/css/article/detail.scss';
-    import '@/static/css/responsive.scss';
+    import '../../static/css/article/detail.scss';
+    import '../../static/css/responsive.scss';
 
     import ArticleCategory from '@/components/article/Category';
 
-
     export default {
         name: 'ArticleDetail',
+        data() {
+            return {
+                pageTitle: '产品详情',
+            }
+        },
         components: {
             'layout-basic': Layout,
             'comp-article-category': ArticleCategory
         },
         created() {
-            document.title = '文章详情';
+            document.title = this.pageTitle;
         },
     }
 </script>

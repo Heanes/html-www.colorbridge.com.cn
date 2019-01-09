@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    import '@/static/css/article/category.scss';
+    import '../../pages/static/css/article/category.scss';
     export default {
         name: 'Category'
     }

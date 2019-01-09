@@ -22,7 +22,7 @@ module.exports = {
                     loader: 'url-loader',
                     options: {
                         limit: 4,
-                        name: 'static/img/[name][hash:8].[ext]',
+                        name: 'static/img/[name].[hash:8].[ext]',
                     },
                 }
             ],

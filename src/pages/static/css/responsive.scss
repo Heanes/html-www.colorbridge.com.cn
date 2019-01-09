@@ -40,6 +40,26 @@ $mainWidthWide: 1400px;
                 width: 33.3333%;
             }
         }
+
+        .cooperation-case{
+            .cooperation-case-list{
+                .item{
+                    width: 50%;
+                }
+            }
+        }
+        .factory-equipment{
+            .equipment-list{
+                .item{
+                    width: 50%;
+                }
+            }
+        }
+        .news-list-wrap{
+            .item-wrap{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -113,15 +133,29 @@ $mainWidthWide: 1400px;
 
     .main {
         .service-feature{
-            .service-feature-list .item{
-                width: 50%;
+            .service-feature-list{
+                .item{
+                    width: 50%;
+                }
+            }
+        }
+        .cooperation-case{
+            .cooperation-case-list{
+                .item{
+                    width: 50%;
+                }
             }
         }
         .factory-equipment{
             .equipment-list{
                 .item{
-                    width: 50%;
+                    width: 100%;
                 }
+            }
+        }
+        .news-list-wrap{
+            .item-wrap{
+                width: 100%;
             }
         }
     }

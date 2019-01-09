@@ -1,7 +1,7 @@
 <template>
     <div class="index-slide-show">
-        <img src="@/upload/image/index/slide/article/slide_01.jpg" alt="slide_01.jpg" />
-        <img src="@/upload/image/index/slide/article/slide_02.jpg" alt="slide_02.jpg" />
+        <img src="@/public/upload/image/index/slide/article/slide_01.jpg" alt="slide_01.jpg" />
+        <img src="@/public/upload/image/index/slide/article/slide_02.jpg" alt="slide_02.jpg" />
     </div>
 </template>
 
@@ -11,7 +11,7 @@
     import '@/public/static/vendor/slick/1.9.0/slick/slick.css';
     import '@/public/static/vendor/slick/1.9.0/slick/slick-theme.css';
     /* 加载自定义的幻灯样式 */
-    import '@/static/css/slide/slide.scss';
+    import '../../pages/static/css/slide/slide.scss';
 
     export default {
         name: 'ArticleSlide',

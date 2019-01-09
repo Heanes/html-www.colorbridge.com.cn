@@ -21,13 +21,19 @@
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
-    font-size: 40px; }
+    font-size: 30px;
+    color: #fff; }
     .index-slide-show.slick-slider .slick-prev:before,
     .index-slide-show.slick-slider .slick-next:before {
       display: none; }
+    .index-slide-show.slick-slider .slick-prev:hover,
+    .index-slide-show.slick-slider .slick-next:hover {
+      background-color: #55acee; }
   .index-slide-show.slick-slider .slick-prev {
-    left: 10px; }
+    left: 10px;
+    padding-right: 4px; }
   .index-slide-show.slick-slider .slick-next {
-    right: 10px; }
+    right: 10px;
+    padding-left: 4px; }
 
 /*# sourceMappingURL=slide.css.map */

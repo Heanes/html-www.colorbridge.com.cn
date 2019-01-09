@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/**
+ * @doc 联系我们
+ * @author Heanes
+ * @time 2018-12-02 19:00:16 周日
+ */
+.contact-us-container {
+  background-color: #4a4e53;
+  padding: 30px 0; }
+  .contact-us-container .title-wrap {
+    text-align: center; }
+  .contact-us-container .content-wrap .contact-form-wrap {
+    width: 66.666%;
+    margin-top: 30px;
+    font-size: 0; }
+    .contact-us-container .content-wrap .contact-form-wrap .form-group {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+      padding: 0 30px;
+      font-size: 13px; }
+  .contact-us-container .content-wrap .contact-info-wrap {
+    width: 33.333%; }
+
+/*# sourceMappingURL=contact.css.map */
